@@ -1,0 +1,159 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#f4f4f4;
+}
+
+header{
+  background:#1e3a8a;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+nav{
+  background:#111827;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:15px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.intro{
+  text-align:center;
+  padding:50px 20px;
+}
+
+section{
+  padding:40px 20px;
+}
+
+footer{
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+.events-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:10px;
+}
+
+.card p{
+    padding:0 10px 10px;
+}
+
+.book-btn{
+    margin:10px;
+    padding:10px 15px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.book-btn:hover{
+    background:#1d4ed8;
+}
+.details-btn{
+    margin:10px;
+    padding:10px 15px;
+    background:#e5e7eb;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.details{
+    display:none;
+    padding:10px;
+    background:#f3f4f6;
+    margin:10px;
+    border-radius:8px;
+}
+#booking{
+    text-align:center;
+}
+
+#bookingForm{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#bookingForm input,
+#bookingForm select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+#bookingForm button{
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .events-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    #bookingForm{
+        width: 90%;
+    }
+
+}
